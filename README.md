@@ -22,7 +22,7 @@ Kalkulator ini dapat melakukan fungsi-fungsi berikut:
 <li><b> / :</b> Untuk pembagian
 <li><b> % :</b> Untuk menghitung sisa hasil bagi
 <li><b>x! :</b> Untuk menghitung nilai faktorial
-<li><b>&#8731 :</b> Untuk menghitung akar pangkat dua
+<li><b>x²:</b> Untuk menghitung pangkat dua
 <li><b>sin(value) :</b> Mengembalikan nilai sinus dari sebuah angka (dalam radian)
 <li><b>cos(value) :</b> Mengembalikan nilai cosinus dari sebuah angka (dalam radian)
 <li><b>tan(value) :</b> Mengembalikan nilai tangen dari sebuah angka (dalam radian)
@@ -32,9 +32,10 @@ Kalkulator ini dapat melakukan fungsi-fungsi berikut:
 <li><b>M- :</b> Mengurangi angka dari memori
 <li><b>MS :</b> Menyimpan angka ke memori
 
-![contoh-fitur-riwayat] ![kalkulator-dengan-fitur-riwayat](https://github.com/user-attachments/assets/ebaf763c-e1f2-4b13-8834-e125a3fe5448)
-![contoh-fitur-riwayat](https://github.com/user-attachments/assets/615c7e05-cd02-4ab2-bf37-4781a8ed703c)
+<li>contoh-fitur-riwayat 
+[kalkulator-dengan-fitur-riwayat](https://github.com/user-attachments/assets/ebaf763c-e1f2-4b13-8834-e125a3fe5448)
+[contoh-fitur-riwayat](https://github.com/user-attachments/assets/615c7e05-cd02-4ab2-bf37-4781a8ed703c)
 
-Nama: Zahra Aulia Nafisa  
-NPM: 2315061028  
-Mata Kuliah: Praktikum Pemrograman Web  
+<li>Nama: Zahra Aulia Nafisa  
+<li>NPM: 2315061028  
+<li>Mata Kuliah: Praktikum Pemrograman Web  
