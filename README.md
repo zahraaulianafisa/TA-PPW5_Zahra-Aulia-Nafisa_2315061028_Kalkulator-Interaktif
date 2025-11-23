@@ -32,8 +32,7 @@ Kalkulator ini dapat melakukan fungsi-fungsi berikut:
 <li><b>MS :</b> Menyimpan angka ke memori
 
 <li>contoh-fitur-riwayat 
-![Image](https://github.com/user-attachments/assets/9a7d5711-a70d-406b-b7cd-3adfd2dc3b00)
-![Image](https://github.com/user-attachments/assets/f047d23d-1715-4a5a-a05e-fbb28fb87725)
+https://raw.github.com/zahraaulianafisa/TA-PPW5_Zahra-Aulia-Nafisa_2315061028_Kalkulator-Interaktif/blob/main/contoh-fitur-riwayat.jpg
 
 Nama: Zahra Aulia Nafisa  
 NPM: 2315061028  
