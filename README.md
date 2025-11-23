@@ -32,7 +32,7 @@ Kalkulator ini dapat melakukan fungsi-fungsi berikut:
 <li><b>M- :</b> Mengurangi angka dari memori
 <li><b>MS :</b> Menyimpan angka ke memori
 
-![contoh-fitur-riwayat](https://user-images.githubusercontent.com/83200847/138139134-eed58c98-4751-490d-ade3-9b1e45790f10.png) 
+![contoh-fitur-riwayat] 
 
 
 Nama: Zahra Aulia Nafisa  
