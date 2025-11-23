@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Interaktif dengan Riwayat Perhitungan</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+
+        <div class="btns">
+            <!-- membuat 5 baris tombol kalkulator -->
+            <div class="row">
+                <!-- setiap baris berisi 6 tombol -->
+                <button id="ce" onclick="backspc()">CE</button>
+                <button onclick="fact()">x!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" onclick="screen.value=''">C</button>
+            </div>
+
+            <div class="row">
+    <button onclick="memoryAdd()">M+</button>
+    <button onclick="sinFunc()">sin</button>
+    <button class="btn">7</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+    <button class="btn">/</button>
+</div>
+
+<div class="row">
+    <button onclick="memorySubtract()">M-</button>
+    <button onclick="cosFunc()">cos</button>
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    <button class="btn">*</button>
+</div>
+
+<div class="row">
+    <button onclick="memoryRecall()">MR</button>
+    <button onclick="tanFunc()">tan</button>
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn">-</button>
+</div>
+
+<div class="row">
+    <button onclick="memoryClear()">MC</button>
+    <button onclick="pow2()">x<sup>2</sup></button>
+    <button class="btn">0</button>
+    <button class="btn">.</button>
+    <button id="eval" onclick="screen.value=calculation(screen.value)">=</button>
+    <button class="btn">+</button>
+</div>
+        </div>
+    </div>
+    <div id="history">
+        <h1><center>History</center></h1>
+    </div>
+    <script type="text/javascript">
+        // mengambil elemen layar dan tombol
+        var screen = document.querySelector('#screen');
+        var btn = document.querySelectorAll('.btn');
+
+        let history = document.getElementById('history');
+        // fungsi untuk menambahkan hasil ke dalam riwayat
+        function calculation(v){
+            para = document.createElement('p');
+            data = v + " = " + eval(v);
+            para.innerText = data;
+            history.appendChild(para);
+            return eval(v);
+        }
+
+        // menambahkan nilai tombol ke layar
+        for(item of btn)
+        {
+            item.addEventListener('click',(e)=>{
+                btntext=e.target.innerText;
+                screen.value+=btntext;
+            });
+        }
+            // FUNGSI MEMORI
+    let memory = 0;
+
+    function memoryAdd() {
+        memory += Number(screen.value) || 0;
+    }
+
+    function memorySubtract() {
+        memory -= Number(screen.value) || 0;
+    }
+
+    function memoryRecall() {
+        screen.value = memory;
+    }
+
+    function memoryClear() {
+        memory = 0;
+    }
+
+    // FUNGSI TRIGONOMETRI
+    function sinFunc() {
+        screen.value = Math.sin(screen.value);
+    }
+
+    function cosFunc() {
+        screen.value = Math.cos(screen.value);
+    }
+
+    function tanFunc() {
+        screen.value = Math.tan(screen.value);
+    }
+
+    // FUNGSI KUADRAT (x²)
+    function pow2() {
+        screen.value = Math.pow(screen.value, 2);
+    }
+
+    // FUNGSI FAKTORIAL (x!)
+    function fact(){
+        var i, num, f;
+        f=1;
+        num=screen.value;
+        for(i=1; i<=num; i++){
+            f=f*i;
+        }
+        screen.value=f;
+    }
+        //fungsi hapus satu karakter terakhir (backspace)
+        function backspc(){
+        screen.value=screen.value.substr(0,screen.value.length-1);
+        }
+        
+    </script>
+</body>
+</html>
