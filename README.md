@@ -1,4 +1,4 @@
-# TA-PPW5_Zahra-Aulia-Nafisa_2315061028_Kalkulator-Interaktif
+<h1>TA-PPW5_Zahra-Aulia-Nafisa_2315061028_Kalkulator-Interaktif</h1>
 <h1>Kalkulator Interaktif dengan Riwayat Perhitungan</h1>
 Proyek ini adalah aplikasi Kalkulator Interaktif berbasis web yang dibuat menggunakan HTML + CSS + JavaScript.  
 Aplikasi ini dilengkapi fitur riwayat perhitungan sehingga pengguna dapat melihat kembali hasil perhitungan sebelumnya.
